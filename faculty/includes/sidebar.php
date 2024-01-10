@@ -35,8 +35,14 @@
 
                   <a class="nav-link" href="logout.php">
                       <div class="sb-nav-link-icon"><i class="fas fa-sign-out-alt"></i></div>
-                      logout
+                      Logout
                   </a>
+                  
+                  <a class="nav-link" href="course_outcome.php">
+                      <div class="sb-nav-link-icon"><i class="fas fa-course-outcome-alt"></i></div>
+                      Course Outcome
+                  </a>
+
               </div>
           </div>
 

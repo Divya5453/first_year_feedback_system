@@ -23,4 +23,4 @@
         </div>
     </div>
     </div><hr class="center">
-    <h2 class="center">Department Of Information Technology</h2>
+    <!-- <h2 class="center">Department Of Information Technology</h2> -->

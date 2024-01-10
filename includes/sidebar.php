@@ -23,6 +23,8 @@
                       <div class="sb-nav-link-icon"><i class="fas fa-sign-out-alt"></i></div>
                       Logout
                   </a>
+                  
+
               </div>
           </div>
 
