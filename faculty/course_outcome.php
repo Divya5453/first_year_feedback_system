@@ -15,7 +15,7 @@
     <link href="css/style.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous">
     </script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
     function checkpass() {
         if (document.signup.password.value != document.signup.confirmpassword.value) {
             alert(' Password and Confirm Password field does not match');
@@ -35,14 +35,18 @@
             y.type = "password";
           }
         }
-    </script>
+    </script> -->
 
 </head>
 <!-- <body class="bg-primary"> -->
 
-<body>
+<body class="sb-nav-fixed">
+<?php include_once('includes/navbar.php');?>
+    <div id="layoutSidenav">
+        <?php include_once('includes/sidebar.php');?>
+        <div id="layoutSidenav_content">
 
-    <?php include_once('includes/header.php');?>
+    
 
     <div id="layoutAuthentication">
         <div id="layoutAuthentication_content">
@@ -61,17 +65,33 @@
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
-                                                        <input class="form-control" id="year" name="year" type="number"
-                                                            placeholder="Enter year" required />
-                                                        <label for="inputYear">Year</label>
+                                                        <select class="form-control" id="year" name="year">
+                                                             <!-- type="number"
+                                                            placeholder="Enter year" required /> -->
+                                                        <option selected>Year</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        </select>
                                                     </div>
                                                 </div>
 
                                                 <div class="col-md-6">
                                                     <div class="form-floating">
-                                                        <input class="form-control" id="sem" name="sem" type="number"
-                                                            placeholder="Enter Semester" required />
-                                                        <label for="inputSemester">Semester</label>
+                                                        <select  class="form-control" id="sem" name="sem" >
+                                                            <!-- type="number"
+                                                            placeholder="Enter Semester" required /> -->
+                                                        <option selected>Semester</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
@@ -332,7 +352,7 @@
                     </div>
             </main>
         </div>
-        <?php include_once('includes/footer.php');?>
+         <?php include_once('includes/footer.php');?>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
     </script>
